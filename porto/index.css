@@ -1,0 +1,223 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.wrapper {
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+.logo a {
+  font-size: 50px;
+  font-weight: 800;
+  float: left;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #06283d;
+  text-shadow: 1px 1px 1px black;
+  margin: auto;
+}
+.menu {
+  float: right;
+}
+nav {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  line-height: 80px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: #ff8243;
+  border-bottom: 1px solid #06283d;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+nav ul li {
+  float: left;
+}
+nav ul li a {
+  color: #06283d;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+nav ul li a:hover {
+  text-decoration: underline #06283d;
+}
+section {
+  margin: auto;
+  display: flex;
+  margin-bottom: 50px;
+  line-height: 50px;
+  padding-top: 5rem;
+}
+.column {
+  margin: 50px;
+  font-size: 20px;
+}
+.column .deskripsi {
+  font-size: 200;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #06283d;
+}
+h2 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: aquamarine;
+  width: 100%;
+  line-height: 50px;
+  font-size: 50px;
+  text-shadow: 1px 1px 1px #ff8243;
+}
+a.tbl-next {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ff8243;
+  background: #06283d;
+  border-radius: 20px;
+  padding: 5px;
+}
+a.tbl-next:hover {
+  text-decoration: underline;
+  border-radius: 50px;
+  cursor: grab;
+}
+a.tbl-sign {
+  font-size: 20px;
+  background-color: #06283d;
+  color: #ff8243;
+  border-radius: 20px;
+  padding: 10px;
+}
+a.tbl-sign:hover {
+  text-decoration: underline;
+}
+/* for online courses */
+section #courses {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+a.tbl-courses {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ff8243;
+  background: #06283d;
+  border-radius: 20px;
+  padding: 5px;
+}
+a.tbl-courses:hover {
+  text-decoration: underline;
+  border-radius: 50px;
+  cursor: grab;
+}
+/* for tutors */
+.mid {
+  text-align: center;
+  width: 100%;
+}
+.tutors-list {
+  width: 100%;
+  position: relative;
+}
+.card-tutors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card-tutors img {
+  border-radius: 50%;
+  width: 20%;
+  margin: auto 10px;
+}
+.tutors-list p {
+  font-size: 20px;
+  font-weight: bolder;
+}
+/* partners */
+.card-partners {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card-partners img {
+  width: 20%;
+  margin: auto 10px;
+}
+/* for contact */
+#contact {
+  background: #06283d;
+  padding: 15px;
+}
+.footer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  color: #ff8243;
+}
+.footer-section {
+  width: 20%;
+  margin: auto;
+}
+.footer-section h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+/* copyright */
+.copyright {
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  background-color: #ff8243;
+}
+/* responsive brak point */
+@media screen and (max-width: 991.98px) {
+  .wrapper {
+    width: 90%;
+  }
+  .logo a {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  nav .menu {
+    width: 100%;
+    margin: 0;
+  }
+  nav .menu ul {
+    text-align: center;
+    line-height: 50px;
+  }
+  nav .menu ul li {
+    display: inline-block;
+    float: none;
+  }
+  section {
+    display: block;
+  }
+  section img {
+    display: block;
+    width: 100%;
+  }
+}
